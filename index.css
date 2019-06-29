@@ -1,31 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 
 body {
-  padding-top: 15vw;
+  display: grid;
+  grid-template-rows: 90vh auto;
+  grid-template-columns: auto;
   text-align: center;
   background-color: whitesmoke;
 }
-.my-card {
-  margin-top: 10px;
+
+body main {
+  padding-top: 7em;
 }
+
 .card-panel {
   background-color: blue;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 }
+
 hr {
   border: 1px solid gray;
 }
+
 .my-footer {
-/*   margin-top: 20%; */
   border-top: 1px solid darkgray;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
   padding: 1vw;
 }
+
 .joke-text {
-/*   font-family: 'Libre Barcode 39 Text', cursive; */
   font-family: 'Inconsolata', monospace;
-  font-size: 3rem;
+  font-size: 2em;
+}
+
+@media (max-height: 520px) {
+  body main {
+    padding-top: 3.5em;
+  }
+
+  .joke-text {
+    font-size: 1.5em;
+  }
 }
