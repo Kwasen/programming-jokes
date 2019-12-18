@@ -6,3 +6,7 @@ Random programming jokes on button click
 
 ## Run
 - open index.html in your favourite browser
+
+## Future Plans
+1. Add database to store jokes
+2. Add loading screen
